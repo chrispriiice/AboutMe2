@@ -13,6 +13,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Don't show label
+        nameLabel.text = ""
+        hobbiesLabel.text = ""
   
     }
 
