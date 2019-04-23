@@ -25,28 +25,38 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hobbies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pl9-kO-ail">
-                                <rect key="frame" x="35" y="162" width="64" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="35" y="162" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mst-hW-ouI">
-                                <rect key="frame" x="110" y="133" width="42" height="21"/>
+                                <rect key="frame" x="114" y="133" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4v-nD-MIT">
-                                <rect key="frame" x="110" y="162" width="42" height="21"/>
+                                <rect key="frame" x="114" y="162" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1a-zv-fe3">
+                                <rect key="frame" x="121" y="823" width="172" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Introduce Yourself"/>
+                                <connections>
+                                    <action selector="introduceYourselfButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7hB-mL-big"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ceL-os-0mU" firstAttribute="leading" secondItem="pl9-kO-ail" secondAttribute="leading" id="5T2-UC-6Du"/>
+                            <constraint firstItem="d1a-zv-fe3" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Cnt-jA-aOE"/>
                             <constraint firstItem="mst-hW-ouI" firstAttribute="leading" secondItem="Z4v-nD-MIT" secondAttribute="leading" id="NQs-WH-Wz0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="d1a-zv-fe3" secondAttribute="bottom" id="fJA-cv-4U9"/>
                             <constraint firstItem="ceL-os-0mU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="89" id="gHK-kz-M4w"/>
                             <constraint firstItem="ceL-os-0mU" firstAttribute="baseline" secondItem="mst-hW-ouI" secondAttribute="baseline" id="jAv-9w-eQh"/>
                             <constraint firstItem="ceL-os-0mU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="k6D-8w-JRI"/>
@@ -56,6 +66,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="hobbiesLabel" destination="Z4v-nD-MIT" id="8fE-os-Ukt"/>
+                        <outlet property="nameLabel" destination="mst-hW-ouI" id="Yku-1S-Sx4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
